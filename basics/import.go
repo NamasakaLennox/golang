@@ -2,13 +2,13 @@ package main
 
 import (
 	"fmt"
-	"net/http"
+	foo "net/http"
 )
 
 func main() {
 	fmt.Println("Hello, Go Standard Lib")
 
-	resp, err := http.Get("https://www.google.com")
+	resp, err := foo.Get("https://www.google.com")
 	if err != nil {
 		fmt.Println("Error: ", err)
 		return
